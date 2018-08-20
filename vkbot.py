@@ -47,12 +47,9 @@ def main():
         if na == 'not_answer':
             write_msg(item['message']['user_id'], f'Я не понимаю тебя, кэп. Моя память не велика и уместились только такие команды, как: ({"; ".join(dictionary["question"])})' )
 
-def vkbot():
-    return "So good!"
 
 if __name__ == "__main__":
     while True:
         main()
-        vkbot()
         time.sleep(0.2)
 
